@@ -1,0 +1,78 @@
+/**
+ * 白 + 红 主题变量（覆盖 Element Plus 主色为品牌红）
+ * 页面底色近白灰，主操作色为 ServicePilot 红
+ */
+:root {
+  /* 品牌主色 */
+  --sp-primary: #d81e06;
+  --sp-primary-dark: #b81705;
+  --sp-primary-light: #ff5a45;
+  --sp-bg: #f6f7f9;
+  --sp-bg-card: #ffffff;
+  --sp-text: #26282b;
+  --sp-text-secondary: #7a7f87;
+  --sp-border: #e9ebef;
+  --sp-sidebar-bg: #ffffff;
+  --sp-success: #18a058;
+
+  /* Element Plus 主色覆盖 */
+  --el-color-primary: #d81e06;
+  --el-color-primary-light-3: #e94d39;
+  --el-color-primary-light-5: #f07a6a;
+  --el-color-primary-light-7: #f6a99f;
+  --el-color-primary-light-8: #f9bfb8;
+  --el-color-primary-light-9: #fdeae7;
+  --el-color-primary-dark-2: #b81705;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--sp-bg);
+  color: var(--sp-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 页面容器通用 */
+.page-card {
+  background: var(--sp-bg-card);
+  border-radius: 10px;
+  padding: 18px 20px;
+  box-shadow: 0 1px 4px rgba(30, 34, 40, 0.06);
+}
+
+.page-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+/* 文本工具 */
+.sp-muted {
+  color: var(--sp-text-secondary);
+  font-size: 12px;
+}
+
+.sp-brand-gradient {
+  background: linear-gradient(120deg, #d81e06, #ff5a45);
+}
+
+/* 登录页左侧品牌背景 */
+.sp-login-brand {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.16) 0, transparent 42%),
+    linear-gradient(150deg, #d81e06 0%, #ef3b22 55%, #ff5a45 100%);
+}
